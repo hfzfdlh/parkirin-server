@@ -4,18 +4,20 @@ const { User,Renter } = require("../models")
 
 async function authenticationUser(req,res,next){
     try {
+
         const {access_token} = req.headers
         if (!access_token) throw {name:"unauthenticated"}
 
         const payload = verifyToken(access_token)
 
-        const getUser = User.findByPk(payload.id)
+        const getUser = await User.findByPk(payload.id)
 
         if(!getUser) throw{name:"unauthenticated"}
 
         req.user = {
             id:getUser.id,
-            email:getUser.email
+            email:getUser.email,
+            role:'User'
         }
 
         next()
@@ -31,13 +33,14 @@ async function authenticationRenter(req,res,next){
 
         const payload = verifyToken(access_token)
 
-        const getUser = Renter.findByPk(payload.id)
+        const getUser = await Renter.findByPk(payload.id)
 
         if(!getUser) throw{name:"unauthenticated"}
 
         req.user = {
             id:getUser.id,
-            email:getUser.email
+            email:getUser.email,
+            role:'Renter'
         }
 
         next()

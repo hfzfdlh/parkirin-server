@@ -12,10 +12,10 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      latitude: {
+      lat: {
         type: Sequelize.FLOAT
       },
-      longitude: {
+      lng: {
         type: Sequelize.FLOAT
       },
       photoUrl: {

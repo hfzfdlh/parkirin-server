@@ -3,6 +3,7 @@
 function errorHandler(err,req,res,next){
     let status = 500
     let message = "Internal server error"
+    console.log('ERROR >>>',err)
 
     if (err.name === "noEmail"){
         status = 400

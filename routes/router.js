@@ -6,11 +6,11 @@ const RenterController = require('../controller/renterController')
 
 
 
-router.post('/login-user',UserController.login)
-router.post('/login-renter',RenterController.login)
-router.post('/register-user',UserController.register)
-router.post('/register-renter',RenterController.register)
-router.use(authentication)
+// router.post('/login-user',UserController.login)
+// router.post('/login-renter',RenterController.login)
+// router.post('/register-user',UserController.register)
+// router.post('/register-renter',RenterController.register)
+// router.use(authentication)
 router.use('/users',routerUser)
 router.use('/renters',routerRenter)
 

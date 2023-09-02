@@ -96,7 +96,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     hooks:{
       beforeCreate:(user)=>{
-        if(!user.money) user.money = 0
+         user.money = 0
       }
     },
     sequelize,

@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs')
 
 function createPass (pass){
-    return bcrypt.hashSync(pass,bcrypt.genSaltSync(20))
+    return bcrypt.hashSync(pass,bcrypt.genSaltSync(10))
 }
 
 function checkPass (pass,hashPass){

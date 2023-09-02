@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "name":"Parkiran pak adam",
+        "lat":-6.166692,
+        "lng":106.811767,
+        "photoUrl":"www.sjdbnguis.com",
+        "price":2000,
+        "RenterId":1
+    },
+    {
+        "id":2,
+        "name":"Parkiran pak david",
+        "lat":-6.163791,
+        "lng":106.817264,
+        "photoUrl":"www.sjdbnguis.com",
+        "price":4000,
+        "RenterId":2
+    },
+    {
+        "id":3,
+        "name":"Parkiran bu Charlie",
+        "lat":-6.193871,
+        "lng":106.829932,
+        "photoUrl":"www.sjdbnguis.com",
+        "price":2000,
+        "RenterId":3
+    },
+    {
+        "id":4,
+        "name":"Parkiran pak eko",
+        "lat":-6.194681,
+        "lng":106.827656,
+        "photoUrl":"www.sjdbnguis.com",
+        "price":2000,
+        "RenterId":4
+    }
+]

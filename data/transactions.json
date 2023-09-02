@@ -1,0 +1,14 @@
+[
+    {
+        "UserId":1,
+        "RenterId":1,
+        "paid":2000,
+        "status":"Active"
+    },
+    {
+        "UserId":1,
+        "RenterId":1,
+        "paid":2000,
+        "status":"Finished"
+    }
+]

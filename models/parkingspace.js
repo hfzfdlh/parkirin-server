@@ -27,7 +27,7 @@ module.exports = (sequelize, DataTypes) => {
         }
       }
     },
-    latitude: {
+    lat: {
       type:DataTypes.FLOAT,
       allowNull:false,
       validate:{
@@ -39,7 +39,7 @@ module.exports = (sequelize, DataTypes) => {
         }
       }
     },
-    longitude: {
+    lng: {
       type:DataTypes.FLOAT,
       allowNull:false,
       validate:{
